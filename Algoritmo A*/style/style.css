@@ -1,0 +1,158 @@
+body{
+    padding: 0;
+    margin:0;
+    background-image: url("../img/fondo.jpg");
+    /* background-color: greenyellow; */
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-size: cover;
+    background-position: center; 
+     
+}
+
+table{
+    border-style: solid;
+    border-width: 6px;
+    border-color: black;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 9rem;
+    margin-top: 3rem;
+}
+td {
+    padding: 15px;
+    background-color: #99caff;
+    border-style: solid;
+    border-width: 3px;
+    border-color: white;
+}
+
+td:hover{
+    background: blue;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-size: cover;
+    background-position: center; 
+}
+
+@media only screen and (min-width: 200px){
+    td{
+        padding: 7px;
+    }
+}
+
+@media only screen and (min-width: 500px){
+    td{
+        padding: 10px;
+    }
+}
+
+@media only screen and (min-width: 720px){
+    td{
+        padding: 20px;
+    }
+}
+
+
+#options{
+    border:black solid 0.4rem;
+    padding: 2rem;
+    color: white;
+    background: linear-gradient(90deg, rgba(167,24,20,1) 0%, rgba(10,43,78,1) 100%);
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    left: 6rem;
+    right: 6rem;
+    z-index: 2;
+}
+
+
+#numFils {
+    width: 2.5rem;
+}
+#numCols {
+    width: 2.5rem;
+}
+#filDest{
+    width: 2.5rem;
+}
+#colDest{
+    width: 2.5rem;
+}
+#probPirate{
+    width: 2.5rem;
+}
+
+/* destino */
+#destination {
+    /* background-color: red; */
+    background-image: url("../img/heroe_chica.png");
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-size: cover;
+    background-position: center; 
+}
+
+/* obstaculo */
+.block {
+    background-image: url("../img/casilla_no_valida.png");
+    /* background-color: pink; */
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-size: cover;
+    background-position: center; 
+}
+
+#calcDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* adversario con penalizacion */
+.wind{
+    background-image: url("../img/heroe_villano1.png");
+    /* background-color: blueviolet; */
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-size: contain;
+    background-position: center; 
+}
+
+/* ruta del viaje */
+.path{
+    background-image: url("../img/heroe_movimiento.png");
+    /* background-color: whitesmoke; */
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-size: contain;
+    background-position: center;
+}
+
+#radios {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+/* heroe pasando por penalizacion */
+.wind.path {
+    /* background-color: yellow; */
+    background-image: url("../img/heroe_lucha.png");
+    background-attachment: no-repeat;
+    background-attachment: local;
+    background-size: cover;
+    background-position: center;
+}
+
+/* heroe */
+.selected{
+    /* background-color: orangered; */
+    background-image: url("../img/heroe1.png");
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-size: contain;
+    background-position: center;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--BOOTSTRAP-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style/style.css">
+    <script src="index.js"></script>
+    <script src="js/matrix.js"></script>
+    <script src="js/coord.js"></script>
+    <script src="js/start.js"></script>
+
+    <title>Algoritomo A* by Joel Garcia</title>
+</head>
+<body>
+    <div class="container">
+        <table>
+        </table>
+    </div>
+    <div>
+        <hr>
+        <div class="my-2" id="options">
+            <div>
+                <div>
+                    <span>Introduzca filas:
+                        <input id="numFils" type="number" value="10">
+                    </span>
+                </div>
+                <div class="my-2">
+                    <span>Introduzca columnas:
+                        <input id="numCols" type="number" value="10">
+                    </span>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <span>Introduzca fila destino:</span>
+                    <input id="filDest" type="number" value="1">
+                </div>
+                <div class="my-2">
+                    <span>Introduzca columna destino:</span>
+                    <input id="colDest" type="number" value="1">
+                </div>
+            </div>
+            <button id="aceptar" class="btn">Generar matriz</button>
+            <div class="text-center">
+                <div id="radios">
+                    <span><input type="radio" name="option" id="initSelected"> Seleccione ubicación de origen</span>
+                    <span><input type="radio" name="option" id="blockSelected"> Seleccione las casillas no validas</span>
+                    <span><input type="radio" name="option" id="windSelected"> Seleccione las casillas con enemigos</span>
+                </div>
+            </div>
+            <div id="calcDiv">
+                <button id="calcular" class="btn btn-primary">¡JUGAR!</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
